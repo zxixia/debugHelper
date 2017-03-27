@@ -22,3 +22,7 @@ android {
         }
     }
 }
+
+// This script was used to upload files to bintray.
+// Note: please put it on the bottm.
+apply from: 'bintray.gradle'
