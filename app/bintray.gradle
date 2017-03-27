@@ -20,9 +20,12 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
-
+// See https://github.com/nostra13/Android-Universal-Image-Loader/issues/1086
 javadoc {
     options{
+        addStringOption('Xdoclint:none', '-quiet')
+        addStringOption('encoding', 'UTF-8')
+        addStringOption('charSet', 'UTF-8')
         encoding "UTF-8"
         charSet 'UTF-8'
         author true
