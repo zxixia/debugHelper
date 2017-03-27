@@ -1,12 +1,18 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:24'
-    buildToolsVersion "25.0.2"
+    /*compileSdkVersion 'Google Inc.:Google APIs:24'
+    buildToolsVersion "25.0.2"*/
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 21
+        /*minSdkVersion 8
+        targetSdkVersion 21*/
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
     }
 
     buildTypes {

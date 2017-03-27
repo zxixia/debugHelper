@@ -13,3 +13,19 @@ allprojects {
         jcenter()
     }
 }
+
+/***
+ * copy from OSChina, to write down the properties values here
+ */
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+    applicationId = "net.jiawa.debughelper"
+    minSdkVersion = 8
+    targetSdkVersion = 24
+    versionCode = 1
+    versionName = "v1.0.0(201703271715)"
+    supportVersion = '25.1.0'
+}
+
+
