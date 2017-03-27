@@ -5,6 +5,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
     }
 }
 
@@ -28,4 +30,7 @@ ext {
     supportVersion = '25.1.0'
 }
 
+// This script was used to upload files to bintray.
+// Note: please put it on the bottm.
+apply from: 'bintray.gradle'
 
