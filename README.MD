@@ -10,12 +10,12 @@
 * * *
 ### A, setup it in your main Activity.onCretea()
 	XLog.setup(1, XLog.Flag(
-			new XFlag(1, true,  "SubTag1"),
-			new XFlag(2, false, "SubTag2"),
-			new XFlag(3, true,  "SubTag3")
+		new XFlag(1, true,  "SubTag1"),
+		new XFlag(2, false, "SubTag2"),
+		new XFlag(3, true,  "SubTag3")
 	));        
 ##### a, This means the whole log TAG is xixia-1.
-##### b, Declare 3 sub tags, and only the subTag1 and subTag2 can work.
+##### b, Declare 3 sub tags, and only the subTag1 and subTag3 can work.
 
 ### B, use it to log where you want like follows:
 	XLog.d(true, 1);
