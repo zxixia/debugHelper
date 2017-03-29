@@ -36,3 +36,21 @@
 
 ### C, preview looks like:
 ![Preview](https://github.com/zxixia/debugHelper/blob/master/pic/preview.png)
+
+## 3, How to use publish to bintray
+* * *
+
+### A, sign up a account in (https://bintray.com/signup/oss)
+### B, see this project [gradle-publish](https://github.com/msdx/gradle-publish)
+##### a, copy the build.gradle to your project root directory
+##### b, copy and change the values in gradle.properties to your project root directory
+##### c, copy the bintray.gradle to your app directory
+##### d, add the follows code to your app/build.gradle
+    // This script was used to upload files to bintray.
+    // Note: please put it on the bottm.
+    apply from: 'bintray.gradle'
+### C, after success build your project, input the following commands in your AndroidStudio command ternimal
+    gradlew javadocJar
+    gradlew sourcesJar
+    gradlew install
+    gradlew bintrayUpload
